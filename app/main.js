@@ -3,6 +3,11 @@
 
 	var currentDate;
 
+	var dateObject = {
+		unixtTimestamp1: 1436128675,
+		istSringDate: '05/07/2015 22:38:00' //IST
+	}
+
 	function getMomentFromTimestamp(timestamp) {
 		return moment.unix(timestamp).tz('Europe/Dublin');
 	}
@@ -16,7 +21,8 @@
 	}
 
 	function formatDate(date){
-		return "Today";
+		return date.toString();
+		//return "Today";
 	}
 
 	function onDateChange() {

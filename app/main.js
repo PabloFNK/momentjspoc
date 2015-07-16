@@ -32,9 +32,11 @@
 
 	window.onload = function() {
 
+		jQuery('#datetimepicker').datetimepicker();		
+
 		updateDateTime();
 
-		setInterval(updateDateTime, 1000)
+		setInterval(updateDateTime, 1000);
 
 		document.getElementById("selectedDate").addEventListener("change", onDateChange);		
 
